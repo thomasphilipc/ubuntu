@@ -7,7 +7,17 @@ def hello():
 
 @application.route("/index")
 def index():
-    return "<h1 style='color:blue'>Hello There! You are on the index page </h1>"
+    user = {'nickname': 'Thomas'}  # fake user
+    return  '''
+<html>
+  <head>
+    <title>Home Page</title>
+  </head>
+  <body>
+    <h1>Hello, ''' + user['nickname'] + '''</h1>
+  </body>
+</html>
+'''
 
 if __name__ == "__main__":
     application.run(host='0.0.0.0')
