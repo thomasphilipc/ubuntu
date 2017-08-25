@@ -6,7 +6,7 @@ application.config.from_object('config')
 
 @application.route("/")
 def hello():
-    return "<h1 style='color:blue'>Hello There! Regards,Thomas , update 9:10 </h1>"
+    return "<h1 style='color:blue'>Hello There! Regards,Thomas , update 11:13 </h1>"
 
 @application.route("/index")
 def index():
