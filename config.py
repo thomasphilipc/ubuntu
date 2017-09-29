@@ -1,2 +1,11 @@
 WTF_CSRF_ENABLED = True
 SECRET_KEY = 'you-will-never-guess'
+SQLALCHEMY_DATABASE_URI = 'sqlite:///database/test.sqlite'
+CSRF_ENABLED = True
+MAIL_USERNAME =  'talk2tpc@gmail.com'
+MAIL_PASSWORD =  'tom@track24'
+MAIL_DEFAULT_SENDER = '"MyApp" <noreply@thomasphilipc.com>'
+MAIL_SERVER = 'smtp.gmail.com'
+MAIL_PORT =  '465'
+MAIL_USE_SSL =   True
+USER_APP_NAME  = "Application"

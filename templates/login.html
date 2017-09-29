@@ -1,19 +1,33 @@
 <!-- extend from base layout -->
-{% extends "base.html" %}
+{% extends "bootstrap/base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
 
 {% block content %}
-  <h1>Sign In</h1>
-  <form action="" method="post" name="login">
+<div class="container">
+<div clas="container">
+<div class="container">
+<div clas="container">
+
+  <form class="form-signin" action="" method="post" name="login">
+      <h2 class="=form-signin-heading">Log- In</h2>
+      <div >
       {{ form.hidden_tag() }}
       <p>
-          Please enter your username:<br>
-          {{ form.username(size=80) }}<br>
+          {{ wtf.form_field(form.username) }}<br>
       </p>
       <p>
-          Please enter your password:<br>
-          {{ form.password(size=80) }}<br>
+          {{ wtf.form_field(form.password) }}<br>
       </p>
+                <p>
+          {{wtf.form_field(form.email)}} <br>
+      </p>
+
       <p>{{ form.remember_me }} Remember Me</p>
-      <p><input type="submit" value="Sign In"></p>
+      <button type="submit"  value="Sign In"  class="btn btn-primary"> Log - In </button>
+      </div>
   </form>
+</div>
+</div>
+</div>
+</div>
 {% endblock %}
