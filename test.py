@@ -4,19 +4,19 @@ from forms import LoginForm
 application = Flask(__name__)
 application.config.from_object('config')
 
-@app.route("/")
+@application.route("/")
 def hello():
     return render_template ("index.html")
 
-@app.route("/about")
+@application.route("/about")
 def about():
     return render_template ("about.html")
 
-@app.route("/resume")
+@application.route("/resume")
 def resume():
     return render_template ("resume.html")
 
-@app.route("/projects")
+@application.route("/projects")
 def projects():
     return render_template ("projects.html")
 
